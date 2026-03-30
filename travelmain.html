@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Planner Page</title>
+        <style>
+            body
+            {
+                font-size: 16px;
+                font-family: 'Times New Roman','Times New Roman', Times, serif;
+                background-image: url(bg1.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                font-family: Comic Sans MS;
+                overflow-x: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .header
+            {
+                text-align: center;
+                border-radius: 20px;
+                font-family: Lucida Calligraphy;
+                font-size: 36px;
+                color: white;
+                padding: 0px;
+                transition: all 0.3s ease;
+                text-shadow: 3px 4px 3px rgb(114, 29, 96);
+                margin-top: 80px;
+                margin-bottom: 0px;
+            }
+            .header:hover
+            {
+                transform: scale(1.1);
+                text-shadow: 4px 5px 3px rgb(109, 25, 91);
+            }
+            .title
+            {
+                text-align: center;
+                border-radius: 20px;
+                font-family: Lucida Calligraphy;
+                font-size: 36px;
+                color: white;
+                padding: 0px;
+                transition: all 0.3s ease;
+                text-shadow: 3px 4px 3px rgb(114, 29, 96);
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            .title:hover
+            {
+                transform: scale(1.1);
+                text-shadow: 4px 5px 3px rgb(109, 25, 91);
+            }
+            .container
+            {
+                margin-left: 70px;
+                margin-right: 70px;
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                padding: 30px;
+                text-align: center;
+                gap: 20px;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+            .main
+            {
+                background-color: rgba(255, 221, 221, 0.224);
+                margin: 70px;
+                display:grid;
+                grid-template-columns: repeat(5,1fr);
+                padding: 10px;
+                text-align: center;
+                gap: 20px;
+                border-radius: 20px;
+            }
+            .about
+            {
+                background-color: rgba(255, 221, 221, 0.224);
+                margin: 70px;
+                padding: 10px;
+                text-align: center;
+                gap: 20px;
+                border-radius: 20px;
+            }
+            .cor
+            {
+                margin-right: 10px;
+                float: right;
+                text-decoration: none;
+                font-size: 30px;
+                color: rgb(7, 7, 111);
+                transition: all 0.5s ease;
+            }
+            .cor:hover
+            {
+                transform: scale(1.1);
+            }
+            .box
+            {
+                background-color: rgba(214, 163, 216, 0.518);
+                border-radius: 20px;
+                padding: 17px;
+                color: rgb(255, 255, 255);
+                font-size: 22px;
+                margin: 20px;
+                transition: all 0.3s ease;
+            }
+            .box:hover
+            {
+                transform: scale(1.01);
+                box-shadow: 8px 8px 10px 8px rgba(41, 3, 57, 0.837);
+            }
+            .top
+            {
+                background-color: rgba(214, 163, 216, 0.518);
+                border-radius: 20px;
+                padding: 17px;
+                color: rgb(255, 255, 255);
+                font-size: 22px;
+                margin: 20px;
+                transition: all 0.3s ease;
+            }
+            a
+            {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+            .im
+            {
+                width: 90%;
+                height:auto;
+                margin-top: 10px;
+                border-radius: 20px;
+                box-shadow: 8px 10px 8px rgba(60, 59, 58, 0.837);
+            }
+            p
+            {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            h5
+            {
+                font-size: 18px;
+            }
+            .header1
+            {
+                position: fixed;
+                width: 100%;
+                background-color: rgba(180, 45, 180, 0.861);
+                z-index: 10;
+                height: 50px;
+                margin: 0;
+                padding: 0;
+                /* color: white; */
+                display: flex;
+                justify-content: space-between;
+                
+                align-items: center;
+            }
+            .header1-left
+            {
+                font-family: Copperplate Gothic Bold,Comic Sans MS;
+                font-size: 20px;
+                padding-left: 30px;
+                color: rgba(0, 0, 0, 0.767);
+            }
+            .header1-right
+            {
+                padding: 15px;
+                display: flex;
+                gap: 30px;
+            }
+            .down
+            {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(114, 53, 114, 0.47);
+                justify-content: center;
+                justify-content: space-between;
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+                margin-top: 0px;
+            }
+            .about
+            {            
+                font-size: 18px;
+            }
+            @media screen and (max-width: 768px){
+            .container
+            {
+                grid-template-columns: repeat(1,1fr);   
+            }
+            .main
+            {
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+          @media screen and (max-width: 1024px)
+          {
+            .container
+            {
+                grid-template-columns: repeat(1,1fr);   
+            }
+            .main
+            {
+                grid-template-columns: repeat(2,1fr);   
+            }
+           }
+           
+        </style>
+    </head>
+    <header>
+            <div class="header1">
+                <div class="header1-left"><p style="font-size: 30px;">Travel Planner</p></div>
+                <div class="header1-right">
+                    <a href="#page 1"><span>Page 1</span></a>
+                    <a href="#page 2"><span>Page 2</span></a>
+                    <a href="#travel"><span>Top 10 Places</span></a>
+                    <a href="#about"><span>about</span></a>
+                    <a href="#contact us"><span>Contact Us</span></a>
+                </div>
+            </div>
+    </header>
+    <body>
+        
+        <div class="body">
+            <div class="header">
+                <center><h1>Plan Your Dream Trip!</h1></center> 
+            </div>
+            <div class="container" id="page 1">
+                <div class="box">
+                    <a href="page1.html">
+                        <img src="bg2.jpg" class="im">
+                        <h2><b>Beach Destinations</b></h2>
+                        <p style="line-height: 1.5;">
+                            Imagine strollimg on a pristine beach and relishing
+                            incredible seafood without a worry in the world!
+                            Does that sound ike your dream vacation? Plan a 
+                            holiday to a beach destination and enjoy to a beach 
+                            destination and enjoy adreline pumping sports
+                            acivities with your loved ones.
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="page2.html">
+                        <img src="bg3.jpg" class="im">
+                        <h2><b>Hills & Mountains</b></h2>
+                        <p style="line-height: 1.5;">
+                            Answer the call of the mountains with <i><b>
+                            TravelPlanner's</b></i> specially curated holiday 
+                            ideas. Traet the nature lover in you to the serene 
+                            bliss of lofty hills and explore hidden gems on an 
+                            epic adventure. Climb the mountain so you can see 
+                            the world, not so the world can see you.
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="page3.html">
+                        <img src="bg4.jpg" class="im">
+                        <h2><b>Heritage Destinations</b></h2>
+                        <p style="line-height: 1.5;">
+                            Explore this list of heritage destinations and 
+                            plan a holiday to visit historical monuments in 
+                            UNESCO-identified heritage sites. Marvel at the 
+                            stories and legacies of majestic dynasties while 
+                            you walk through their historic lanes. Heritage 
+                            is the soul of history still breathing.
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container" id="page 2">
+                <div class="box">
+                    <a href="page4.html">
+                        <img src="bg5.webp" class="im">
+                        <h2><b>Trekking Hotspots</b></h2>
+                        <p style="line-height: 1.5;">
+                            Replace the boredom of your daily routine 
+                            with an epic adventure. Be it soaring in 
+                            the sky or diving in the sea, explore the 
+                            best ideas for a thrilling trip. It's time 
+                            to feel the adrenaline racing through your 
+                            veins! On a date with mountains!!
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="page5.html">
+                        <img src="bg6.avif" class="im">
+                        <h2><b>Places to Relax</b></h2>
+                        <p style="line-height: 1.5;">
+                            Escape the daily routine and humdrum of 
+                            city life with a relaxing trip to a 
+                            serene destination. Rejuvenate your 
+                            body and mind with therapeutic spa 
+                            treatments, soothing beach walks, 
+                            flavourful drinks, scrumptious meals 
+                            and morning meditations.
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="page6.html">
+                        <img src="bg7.jpg" class="im">
+                        <h2><b>Foodie Dreams</b></h2>
+                        <p style="line-height: 1.5;">
+                            Pamper your taste buds with flavours 
+                            of different regions. Go on adventures 
+                            to not just taste but also experience a 
+                            truly authentic culinary journey. Explore 
+                            the tiniest of lanes & largest of markets 
+                            on your next food trail. Taste the love in 
+                            every bite
+                        </p>
+                        <div class="cor">
+                            <p>EXPLORE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="title">
+                <center><h1>
+                    <h2>Top 10 places to visit India</h2>
+                </h1></center> 
+            </div>
+            <div class="main" id="travel">
+                <div class="box">
+                        <a href="https://ootytourism.co.in/">
+                            <img src="bg36.jpg" class="im">
+                            <p>1.Ooty</p>
+                        </a>
+                </div>
+                <div class="box">
+                    <a href="https://ujjain.nic.in/en/">
+                        <img src="bg37.jpg" class="im">
+                        <p>2.Ujjain</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://py.gov.in/tourism-0">
+                        <img src="bg38.jpg" class="im">
+                        <p>3.Pondicherry</p>
+                    </a> 
+                </div>
+                <div class="box">
+                    <a href="https://maharashtratourism.gov.in/nature/mahabaleshwar/">
+                        <img src="bg40.jpg" class="im">
+                        <p>4.Mahabaleshwar</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://mumbaicity.gov.in/en/tourism/tourist-places/">
+                        <img src="bg41.jpg" class="im">
+                        <p>5.Mumbai</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://himachaltourism.gov.in/destination/manali/o">
+                        <img src="bg39.jpg" class="im">
+                        <p>6.Manali</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.tourism.rajasthan.gov.in/udaipur.html">
+                        <img src="bg42.jpg" class="im">
+                        <p>7.Udaipur</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.shreejagannatha.in/">
+                        <img src="bg43.webp" class="im">
+                        <p>8.Puri Jagannath </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.gulmargtourism.com/">
+                        <img src="bg44.jpg" class="im">
+                        <p>9.Gulmarg</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://jaipurtravel.com/">
+                        <img src="bg45.jpg" class="im">
+                        <p>10.Jaipur</p>
+                    </a>
+                </div>
+            </div>
+            <div class="title" id="about">
+                <center><h1>
+                    <h2 style="font-size: 38px;">Choose from our list of holiday 
+                        ideas and appease your wanderlust!</h2>
+                </h1></center> 
+            </div>
+            <div class="about">
+                <center>
+                <p style="margin-left: 30px; margin-right: 30px; font-size: 20px;">
+                    Vacations are meant to make memories! And a well-planned itinerary makes for the 
+                    vacation of a lifetime. <br>Choose from a variety of destinations including picturesque 
+                    mountains, vibrant valleys, majestic monuments, gorgeous cities and adventurous trails.<br> 
+                    Holidays to these exclusive destinations are available at a preferred budget, ranging from 
+                    Rs. 10,000 to 50,000, including both pocket-friendly as well as uber-luxurious options.<br> 
+                    Not only will these holidays fit your budget, they will also cater to all your travel needs.<br>
+                    Eager for a mountain holiday?<br> Our scenic mountain destinations offer mesmerising views of 
+                    snowclad mountains and offer trips to unique tourist points.<br>
+                    Want to go on a trek? Try the ones here with beautiful views of lofty mountains and winding 
+                    paths that take you through rugged valleys and forests.<br> The delicious local cuisine 
+                    and extraordinary accommodation inside the woods is, of course, the cherry on the cake. <br>
+                    Choose an adventure heavy trip, best suited for those craving an adrenaline rush, and 
+                    try your hand at offbeat activities like camping, scuba diving, rafting, kayaking, 
+                    parasailing, sky diving, bungee jumping and more.</p></center>
+            </div>
+            <div class="title">
+                <center><h1>
+                    <h2>Contact Us:- </h2>
+                </h1></center> 
+            </div>
+            <div class="down" id="contact us"><center>
+                <p>Name : Mayuri Posham Balaram.</p>
+                <p>College : Government Polytechnic, Solapur.</a></p>
+                <p>Course : Diploma in Computer Technology.</p>
+                <p>Email : mayuriposham428@gmail.com.</p>
+                <p>Contact no : 7796191673.</p></center>
+            </div>
+        </div>
+    </body>
+</html>

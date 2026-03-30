@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 4</title>
+        <style>
+            body
+            {
+                font-size: 16px;
+                font-family: 'Times New Roman','Times New Roman', Times, serif;
+                background-image: url(bg23.webp);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                width: 100%;
+                font-family: Comic Sans MS;
+            }
+            .header
+            {
+                text-align: center;
+                border-radius: 20px;
+                font-family: Lucida Calligraphy;
+                font-size: 24px;
+                color: white;
+                padding: 0px;
+                transition: all 0.3s ease;
+                text-shadow: 1px 2px 1px rgb(0, 49, 90);
+            }
+            .header:hover
+            {
+                transform: scale(1.1);
+                text-shadow: 4px 5px 3px rgb(0, 49, 90);
+            }
+            .container
+            {
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                padding: 30px;
+                text-align: center;
+                gap: 20px;
+                border-radius: 20px;
+            }
+            .button
+            {
+                margin-right: 10px;
+                display: flex;
+                width: 50%;
+                flex-direction: row;
+                text-decoration: none;
+                background-color: rgb(9, 63, 133);
+                color: azure;
+                transition: all 0.5s ease;
+                color: rgb(255, 255, 255);
+                border-radius: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .button:hover
+            {
+                transform: scale(1.1);
+                background-color: rgb(4, 28, 54);
+                color: aliceblue;
+                
+            }
+            .box
+            {
+                background-color: rgba(116, 190, 232, 0.532);
+                border-radius: 20px;
+                padding: 17px;
+                color: rgb(255, 255, 255);
+                font-size: 22px;
+                margin: 20px;
+                transition: all 0.3s ease;
+            }
+            .box:hover
+            {
+                transform: scale(1.01);
+                box-shadow: 8px 8px 10px 8px rgba(93, 104, 162, 0.837);
+            }
+            a
+            {
+                margin: 10px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                display: flex;
+            }
+            a:hover
+            {
+                color: aliceblue;
+            }
+            .im
+            {
+                width: 90%;
+                height:auto;
+                margin: 10px;
+                margin-bottom: 0;
+                border-radius: 20px;
+                box-shadow: 8px 10px 8px rgba(60, 59, 58, 0.837);
+            }
+            p
+            {
+                font-weight: bold;
+                color: BLACK;
+            }
+            h1
+            {
+                color: rgb(2, 2, 59);
+            }
+            h5
+            {
+                font-size: 18px;
+            }
+            h2
+            {
+                color: black;
+                font-weight: bold;
+            }
+            h3
+            {
+                color: black;
+            }
+            .header1
+            {
+                color: white;
+            }
+            @media screen and (max-width: 1024px)
+        {
+            .container
+            {
+                grid-template-columns: repeat(1,1fr);   
+            }
+        }
+        </style>
+    </head>
+    <header class="header1">
+        <a href="travelmain.html">⏪Back to Home page</a>
+    </header>
+    <body>
+        <div class="body">
+            <div class="header">
+                <h1>Best Places for Treks in India</h1>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="bg24.jpg" class="im">
+                    <h2>COONOOR</h2>
+                    <p style="line-height: 1.5;">
+                        Coonoor is a green carpet, unfurled 
+                        across the hills to welcome you! 
+                        Coonoor, you have my heart 🤍
+                    </p>
+                    <div class="button">
+                        <a href="loginpage.html">REGISTER</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="bg25.jpg" class="im">
+                    <h2>KASAULI</h2>
+                    <p style="line-height: 1.5;">
+                        Golden hour in Kasauli, where the sky 
+                        blushes over the pine trees. Whispering 
+                        prayers into the mountain breeze!
+                    <div class="button">
+                        <a href="login.html">REGISTER</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="bg26.avif" class="im">
+                    <h3>MAHABALESHWAR</h3>
+                    <p style="line-height: 1.5;">
+                        Where the air smells like wet earth 
+                        and fresh, red strawberries. "Land 
+                        of Strawberries"
+                    </p>
+                    <div class="button">
+                        <a href="login.html">REGISTER</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="bg27.jpg" class="im">
+                    <h2>SHIMLA</h2>
+                    <p style="line-height: 1.5;">
+                        Ladakh: A place where the mountains 
+                        whisper ancient stories and the lakes 
+                        hold the color of the sky.
+                    </p>
+                    <div class="button">
+                        <a href="login.html">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

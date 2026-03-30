@@ -1,0 +1,205 @@
+
+<html> 
+    <head> 
+        <title>Registration page</title> 
+        <style>         
+        body 
+        {          
+            background: #EEAECA; 
+            background-image:  linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            font-family: Comic Sans MS;
+        } 
+        form 
+        { 
+            display: flex;             
+            flex-direction: column; 
+            gap: 10px;             
+            height: 300px;             
+            line-height: 1.9; 
+            margin-bottom: 30px; 
+        } 
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 20px;
+        }
+        .box 
+        {   margin-left: 40px;
+            background-color:rgba(148, 188, 233, 0.226);             
+            height: 600px;             
+            width: 400px;             
+            padding: 20px; 
+            border-radius: 25px; 
+            box-shadow: 10px 10px 10px rgb(189, 156, 192); 
+            transition: all 0.3s ease;
+        } 
+        .box:hover
+        {
+            transform: scale(1.01);
+            box-shadow: 10px 10px 10px rgb(189, 156, 192);
+        }
+        input,option,select 
+        { 
+            margin: 12px;
+            border: none;            
+            background: transparent; 
+            border-bottom: 1px solid white; 
+        } 
+        .button
+            {
+                margin-right: 10px;
+                width: 50%;
+                text-decoration: none;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 100px;
+                padding-right: 40px;
+            }
+        button:hover 
+        { 
+            transform: scale(1.01); 
+            background-color: #000000; 
+            color:white;
+        } 
+        h2
+        {
+            text-align: center;
+            font-display:fallback;
+        }
+        @media screen and (max-width: 1024px)
+        {
+            .container
+            {
+                grid-template-columns: repeat(1,1fr);   
+            }
+        }
+    </style> 
+    <body> 
+        <center><h1><b>Registration</b></h1></center>
+        <hr color="black">
+ <div class="container">
+     <div class="box"> 
+        <center><h2>Personal Info</h2></center>
+        <form> 
+            <label>Enter the name</label> 
+            <input type="text" placeholder="enter your full name "required> 
+            <label>Enter the mobile number</label> 
+            <input type="tel" placeholder="enter your mobail number"> 
+            <label>Enter the Email</label> 
+            <input type="email" placeholder="enter your email" required>             
+            
+            
+ 
+           <div class="course"> 
+            Budget :<br>
+            <input type="radio" name="logintype"><label>₹100000</label> 
+            <input type="radio" name="logintype"><label>₹200000</label> 
+            <input type="radio" name="logintype"><label>₹90000</label> 
+            <input type="radio" name="logintype"><label>₹80000</label> 
+           </div> 
+ 
+           <input type="text" name="address" placeholder="enter your address">            <div class="button"> 
+           <button type="Reset">Reset</button> 
+           <button type="submit">Submit</button> 
+              </div> 
+        </form> 
+        </div> 
+        <div class="box"> 
+        <h2>Accomodation & Food</h2> 
+        <form> 
+            
+            <select> 
+                <option>Select Beaches in Goa</option> 
+                <option>Baga Beach</option> 
+                <option>Calangute Beach</option> 
+                <option>Anjuna Beach</option> 
+                <option>Candolim Beach</option> 
+                <option>Arambol Beach</option> 
+                <option>Agonda Beach</option> 
+                <option>Colva Beach</option> 
+                <option>Palolem Beach</option> 
+            </select> 
+            <select> 
+                <option>Select Resort</option>
+                <option>Tamalisto Resort</option> 
+                <option>Stone Wood Hotels & Resort</option> 
+                <option>Shangrila Jungle Resort</option> 
+                <option>Tan adn Sand</option> 
+                <option>Renaissance Goa Hotel</option> 
+                <option>Planet Hollywood Beach Resort</option>
+                <option>Hilton Goa Resort</option>
+                <option>Taj Holiday Village Resort</option>
+            </select>
+            <select> 
+                <option>Number of people</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>More than 10</option>
+            </select>
+            <select> 
+                <option>Number rooms needed</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>More than 10</option>
+            </select>
+            <select> 
+                <option>Guide needed or not</option>
+                <option>We need a guide</option> 
+                <option>We don't need a guide</option> 
+            </select>
+           <div class="course"> 
+            Food Preferrences :<br>
+            <input type="radio" name="logintype"><label>Veg</label> 
+            <input type="radio" name="logintype"><label>Non-Veg</label> 
+            <input type="radio" name="logintype"><label>Sea-Food</label>
+           </div> 
+ 
+           <div class="button"> 
+           <button type="Reset">Reset</button> 
+           <button type="submit">Submit</button> 
+              </div> 
+        </form> 
+        </div> 
+        <div class="box"> 
+          <h2>Transportation</h2> 
+        <form> 
+                <div class="course"> 
+            Payment Method :<br>
+            <input type="radio" name="logintype"><label>Online</label> 
+            <input type="radio" name="logintype"><label>Offline</label> 
+           </div>       
+            
+           <div class="course"> 
+            Transport :<br>
+            <input type="radio" name="logintype"><label>Flight</label> 
+            <input type="radio" name="logintype"><label>Car</label> 
+            <input type="radio" name="logintype"><label>Train</label> 
+            <input type="radio" name="logintype"><label>Bus</label> 
+           </div> 
+
+           Any other Requirements :
+           <input type="text" name="address" placeholder="Any other Requirements">            <div class="button"> 
+           <button type="Reset">Reset</button> 
+           <button type="submit">Submit</button> 
+           </div>
+        </form>
+       </div>
+    </body> 
+</html>
