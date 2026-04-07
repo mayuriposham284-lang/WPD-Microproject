@@ -7,7 +7,7 @@
             {
                 font-size: 16px;
                 font-family: 'Times New Roman','Times New Roman', Times, serif;
-                background-image: url(bg1.jpg);
+                background-image: url(bg47.jpg);
                 background-repeat: no-repeat;
                 background-size:cover;
                 background-attachment: fixed;
@@ -24,17 +24,16 @@
                 border-radius: 20px;
                 font-family: Lucida Calligraphy;
                 font-size: 36px;
-                color: white;
+                color: rgb(64, 26, 65);
                 padding: 0px;
                 transition: all 0.3s ease;
-                text-shadow: 3px 4px 3px rgb(114, 29, 96);
                 margin-top: 80px;
                 margin-bottom: 0px;
             }
             .header:hover
             {
                 transform: scale(1.1);
-                text-shadow: 4px 5px 3px rgb(109, 25, 91);
+                text-shadow: 4px 3px 3px rgb(116, 113, 116);
             }
             .title
             {
@@ -71,7 +70,7 @@
                 background-color: rgba(255, 221, 221, 0.224);
                 margin: 70px;
                 display:grid;
-                grid-template-columns: repeat(5,1fr);
+                grid-template-columns: repeat(3,1fr);
                 padding: 10px;
                 text-align: center;
                 gap: 20px;
@@ -101,11 +100,11 @@
             }
             .box
             {
-                background-color: rgba(214, 163, 216, 0.518);
+                background-color: rgba(182, 145, 186, 0.354);
                 border-radius: 20px;
                 padding: 17px;
                 color: rgb(255, 255, 255);
-                font-size: 22px;
+                font-size: 20px;
                 margin: 20px;
                 transition: all 0.3s ease;
             }
@@ -150,7 +149,7 @@
             {
                 position: fixed;
                 width: 100%;
-                background-color: rgba(180, 45, 180, 0.861);
+                background-color: rgba(197, 130, 197, 0.861);
                 z-index: 10;
                 height: 50px;
                 margin: 0;
@@ -188,6 +187,7 @@
             .about
             {            
                 font-size: 18px;
+                background-color: rgba(210, 181, 211, 0.632);
             }
             @media screen and (max-width: 768px){
             .container
@@ -198,7 +198,6 @@
             {
                 grid-template-columns: repeat(2,1fr);
             }
-            
         }
           @media screen and (max-width: 1024px)
           {
@@ -211,18 +210,17 @@
                 grid-template-columns: repeat(2,1fr);   
             }
            }
-           
         </style>
     </head>
     <header>
             <div class="header1">
                 <div class="header1-left"><p style="font-size: 30px;">Travel Planner</p></div>
                 <div class="header1-right">
-                    <a href="#page 1"><span>Page 1</span></a>
-                    <a href="#page 2"><span>Page 2</span></a>
-                    <a href="#travel"><span>Top 10 Places</span></a>
-                    <a href="#about"><span>about</span></a>
-                    <a href="#contact us"><span>Contact Us</span></a>
+                    <a href="#page 1">Page 1</a>
+                    <a href="#page 2">Page 2</a>
+                    <a href="#travel">Top 12 Places</a>
+                    <a href="#about">about</a>
+                    <a href="#contact us">Contact Us</a>
                 </div>
             </div>
     </header>
@@ -341,12 +339,13 @@
                 </div>
             </div>
             </div>
-            <div class="title">
+            <div class="title" id="travel">
                 <center><h1>
-                    <h2>Top 10 places to visit India</h2>
+                    <h2>Top 12 places to visit India</h2>
                 </h1></center> 
             </div>
-            <div class="main" id="travel">
+            <mareqee direction="left" loop="90">
+            <div class="main" >
                 <div class="box">
                         <a href="https://ootytourism.co.in/">
                             <img src="bg36.jpg" class="im">
@@ -407,7 +406,20 @@
                         <p>10.Jaipur</p>
                     </a>
                 </div>
+                <div class="box">
+                    <a href="https://www.tajmahal.gov.in/#slider">
+                        <img src="bg46.jpeg" class="im">
+                        <p>11.Tajmahal</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://srjbtkshetra.org/">
+                        <img src="bg48.jpg" class="im">
+                        <p>12.Ayodhya</p>
+                    </a>
+                </div>
             </div>
+            </mareqee>
             <div class="title" id="about">
                 <center><h1>
                     <h2 style="font-size: 38px;">Choose from our list of holiday 
